@@ -29,7 +29,7 @@
 					padding-left: 0 !important;
 				}
 				.two-price-cols {
-					display: inline-block !important;
+					display: inline !important;
 				}
 				.two-price-cols .middle {
 					text-align: left !important;
@@ -66,7 +66,7 @@
 					vertical-align: top !important;
 				}
 				.item-col img {
-					width: 75%;
+					width: 50%;
 					max-width: 75%;
 				}
 				.item-cols .middle {
@@ -80,8 +80,17 @@
 					padding-left: 0 !important;
 				}
 				.two-price-cols {
-					text-align: center !important;
+					/* text-align: center !important; */
 					display: inline-block !important;
+					width: 100%;
+				}
+				.two-price-cols .middle {
+					padding-right: 0 !important;
+					width: 100px !important;
+				}
+				.two-price-cols .end {
+					vertical-align: top;
+					display: inline-block;
 				}
 				.price-col {
 					padding: 0;
@@ -91,6 +100,10 @@
 				h1 {
 					padding: 0 120px 20px;
 					font-size: 32px;
+				}
+				.two-price-cols {
+					padding-right: 40px !important;
+					padding-left: 40px !important;
 				}
 			}
 		</style>
@@ -773,12 +786,12 @@
 										class="price-col middle"
 										style="
 											border-spacing: 0;
-											max-width: 100px;
-											padding-left: 20px;
+											max-width: 200px;
 											width: 100%;
 											max-width: 200px;
-											display: inline;
-											padding-right: 120px;
+											display: inline-bloack;
+											float: left;
+											vertical-align: top;
 										"
 									>
 										<tr>
@@ -837,13 +850,13 @@
 										style="
 											border-spacing: 0;
 											text-align: right;
-											padding-left: 40px;
 											width: 100%;
 											max-width: 200px;
 											display: inline;
+											vertical-align: top;
 										"
 									>
-										<tr>
+										<tr style="float: right">
 											<td style="padding: 0">
 												<p
 													class="order-sub"
